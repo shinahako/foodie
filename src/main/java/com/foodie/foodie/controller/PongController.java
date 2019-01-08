@@ -10,9 +10,15 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class PongController {
 
-    @RequestMapping(value = "/pong", method = RequestMethod.GET)
-    @CrossOrigin(origins = "*") //TODO change me!
-    public String pong() {
-        return "pong";
-    }
+  @RequestMapping(value = "/pong", method = RequestMethod.GET)
+  @CrossOrigin(origins = "*") //TODO change me!
+  public String pong() {
+    return "pong";
+  }
+
+  @RequestMapping(value = "/getData", method = RequestMethod.GET)
+  @CrossOrigin(origins = "*") //TODO change me!
+  public String getData() {
+    return "getData";
+  }
 }
